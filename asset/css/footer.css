@@ -1,0 +1,127 @@
+/*----------------Le pied de page---------------*/
+
+
+/*Le text (gernerale)*/
+
+
+/*COULEUR et la taille DU TEXTE*/
+.pied_de_page h2,
+.pied_de_page h4,
+.pied_de_page .liens_colonne a{
+    font-size: 20px;
+}
+.pied_de_page p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pied_de_page p,
+.pied_de_page h2,
+.pied_de_page h4,
+.pied_de_page .liens_colonne a{
+    color: rgb(226, 226, 226);
+}
+
+
+.pied_de_page {
+    display: flex;
+    justify-content: center;
+    background-color: #655050;
+    padding: 20px;
+}
+
+.structure {
+    max-width: 1200px;
+}
+
+.pied_de_page ul {
+    list-style: none;
+}
+
+
+
+/*LA STRUCTURE GENERALE DE CONTENU*/
+
+.contenu_contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*LA STRUCTURE GÉNÉRALE DES COLONNES */
+.contenu_contact .liens_colonne, .contact_info_colonne, .abonez-toi{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenu_contact .liens_colonne,
+.contact_info_colonne,
+.abonez-toi {
+    width: 33.3%; /* Initial width for larger screens */
+}
+
+/*logo*/
+.logo.pied {
+    margin-top: 2rem;
+}
+
+ 
+
+
+/*La deuxième colonne(Contactes)*/
+
+.contact_clients h4{
+    margin-bottom: 5px;
+}
+
+
+
+/*Le bouton*/
+
+.contact_info_colonne .btn_contact {
+    margin-top: 15px;
+}
+.contact_info_colonne .btn_contact button{
+   padding: 10px;
+   background-color: rgb(169 169 169);
+   color: white;
+   border: none;
+   cursor: pointer;
+} 
+
+
+
+/*Les contactes*/
+ .tel_mail .tel, .mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Les icones*/
+ .tel_mail img {
+    width: 30px;
+    height: 30px;
+}  
+
+
+
+/*----pied de page droits réservés---*/
+/*Container*/
+.droits {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+.droits p {
+    color: white;
+    font-weight: bold;
+}
+/*Description*/
+.droits .droits_descr{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

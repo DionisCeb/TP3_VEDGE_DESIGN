@@ -1,0 +1,53 @@
+/*General*/
+.contenu_recherche h1 {
+    color: #6b5f5f;
+}
+
+/*La boite de recherche*/
+.recherche_boite {
+    position: relative;
+    max-width: 300px;
+    min-width: 200px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*le champ de recherche*/
+.recherche_boite input {
+    border: none;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+/*arrondir les bordures*/
+.recherche_boite, input {
+    border-radius: 20px;
+}
+
+/*L'icone recherche*/
+.recherche-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.recherche-icon:hover {
+    opacity: 100%;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+/**/
+
+.contenu_recherche input[type="text"]::placeholder {
+    color: #6b5f5f;
+    font-size: 20px;
+    padding-left: 10px;
+}

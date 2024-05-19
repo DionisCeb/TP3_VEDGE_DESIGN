@@ -1,0 +1,31 @@
+.abonez-toi {
+    justify-content: start;
+    gap: 5px;
+}
+
+.abonez-toi h2 {
+    border-bottom: none;
+}
+
+/*description service*/
+.abonez-toi p {
+    font-size: 1rem; 
+}
+
+/*La boite*/
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Champ*/
+.newsletter-form input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,45 @@
+/*Reservation*/
+
+.disponibilites h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*boite de reservation*/
+.reservation-boite {
+    display: flex;
+    align-items: center;  
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+/*Les styles generales pour les champs et le bouton*/
+.reservation-boite button,
+.reservation-boite input,
+.reservation-boite select {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Le bouton*/
+.reservation-boite button {
+    background-color: #655050;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reservation-boite button:hover {
+    background: rgb(185, 132, 132);
+}
+
+
+.reservation-boite input[type="number"]::placeholder {
+    color: black;
+}

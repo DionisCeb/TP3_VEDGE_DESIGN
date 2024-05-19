@@ -1,0 +1,164 @@
+
+ /* Styles généraux */
+li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a:hover {
+   color: rgb(238, 198, 39);
+}
+
+.nav_header {
+    padding: 10px;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.medaillon {
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+nav .liens {
+    display: flex;
+    gap: 30px;
+}
+
+
+.toggle_btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+.dropdown { 
+    position: relative;
+}
+
+/*Menu-deroulant*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*L'icone fleche*/
+span {
+    color: white;
+    font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    /* padding: 12px 16px; */ /*changé en: "padding: 5px;" */
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #5d5757;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*dropdown_menu*/
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    right: 30px;
+    top: 100px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1; 
+    border-radius: 15px;
+}
+
+/*Quand on ouvre le menu deroulant (mobile)*/
+.dropdown_menu.open {
+    display: block;
+}
+
+.dropdown_menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    text-align: center;
+}
+
+/*Navigation pour les telephones*/
+
+@media (max-width: 1000px) {
+    nav .liens,
+    nav .action_btn {
+        display: none;
+    }
+
+    nav .toggle_btn {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+     .dropdown_menu .action_btn {
+        display: block;
+    } 
+
+}
+
+
+@media (max-width: 550px) {
+
+     .dropdown_menu {
+        left: 30px;
+        top: 140px;
+        width: unset;
+    } 
+
+}

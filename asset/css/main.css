@@ -1,0 +1,282 @@
+/* @import url(nav.css); */
+@import url(navigation.css);
+@import url(recherche_boite.css);
+@import url(reservation.css);
+@import url(google-maps.css);
+@import url(media-queries.css);
+@import url(footer.css);
+@import url(footer_abonnez.css);
+@import url(bouton.css);
+@import url(root.css);
+
+/*les style de police */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Rythme vertical pour les éléments de contenu*/
+
+/* main *+p, main *+img, main *+a,
+main *+h1, main *+h2, main *+h3, main *+h4 { 
+    margin-top: 20px; 
+} */
+
+/*Interligne------------------------*/
+
+/* Styles de base */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #1e1a1a;
+}
+
+body, html {
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+body {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+h1, h2, h3, h4 {
+    line-height: 1.15;
+}
+
+p {
+    line-height: 1.35;
+}
+
+/*Font-size----------------------*/
+
+.promotion>h3 {
+    font-size: 3.157rem;
+}
+
+main header, .footer-header-title>h3 {
+    font-size: 2.369rem;
+}
+
+main>header .bouton {
+    font-size: 0.75em;
+}
+
+main h2 {
+    font-size: 1.777rem;
+}
+
+main>section {
+    font-size: 1.333rem;
+}
+
+body>footer {
+    font-size: 1rem;
+}
+
+
+/*Structure pour les éléments paragraphes et les liens----*/
+
+main a, p {
+    display: block;
+}
+
+/*S'assurer de ne pas dépasser 85 caractères par intervention*/
+
+p {
+    max-width: 50ch;
+}
+
+
+
+/*Séparer les titres du contenu--------*/
+
+header h2 {
+    padding-bottom: 8px;
+    text-align: left;
+    border-bottom: 4px double rgba(0,0,0,0.37);
+}
+
+h2 {
+    color: rgb(86 116 113);
+}
+h3 {
+    color: white;
+}
+
+/*La couleur de fond de la navigation et de la page principale*/
+.nav_header, .accueil_header {
+    background-color: var(--ar_elements_sec);
+}
+
+/*Règles générales de la structure-----------*/
+
+main>section>div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Rythme vertical espacé pour bien dégager les principaux conteneurs de contenu */
+
+main>section {
+    margin: 72px auto 0 auto;
+    max-width: 100rem;
+    padding: 0 20px;
+}
+
+/*Implanter l'image en arrière-plan pour l'entête, et forcer la pleine largeur*/
+
+main > header {
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+main>header>div>a {
+    display: block;
+}
+
+main>section>div {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+main>header>* {
+    flex-grow: 1;
+}
+
+main>header>div {
+    max-width: calc(60rem - 20px);
+}
+
+/* Classe commune pour les conteneurs flexibles avec direction de colonne et contenu centré */
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Classe commune pour les éléments avec gouttière  */
+.with-gap {
+    gap: 20px;
+}
+
+/*La structure de la section botanique(le text et le bouton)*/
+
+
+.accueil_header .botanique p, h1{
+    color: white;
+}
+
+.botanique p {
+    font-size: 30px;
+}
+.botanique h1 {
+    font-size: 80px;
+}
+
+.botanique,
+.promotion {
+    margin: 30px; 
+    color: white;
+    text-align: center;
+}
+
+
+/*Mettre en forme la section promotion-----*/
+
+.promotion {
+    min-height: 55vh;
+    background-image: url("/asset/img/mimosa.jpg");
+    border-radius: 4px;
+}
+
+/*Mettre les bases en places pour les sections mission, et franchise*/
+
+.mission>img, .mission>article, .franchise>img{
+    flex-basis: 50%;
+}
+
+/*paramètrer la section mission et la portion article de la section franchise------*/
+
+.mission>img {
+    width: 65vw;
+    height: 40vh;
+    object-fit: cover;
+
+}
+
+
+
+/*Mettre en forme la section restaurant vedette---*/
+
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.restaurant {
+    margin: 10px;
+    text-align: center;
+    width: 400px; /* Initialement, 3 images par ligne */
+    border-radius: 10px; /* Rayon de la bordure pour le conteneur .restaurant */
+    overflow: hidden; /* Masquer tout débordement de contenu */
+}
+
+.restaurant a {
+    pointer-events: none;
+}
+
+.restaurant h3 {
+    background-color: var(--ar_elements_sec); /* Couleur de fond pour les h3 */
+    border-radius: 10px; /* Rayon de la bordure pour les h3 */
+    padding: 10px; /* Ajouter du remplissage pour créer de l'espace autour du texte */
+}
+
+.restaurant img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0; /* Rayon de la bordure pour l'image */
+}
+
+
+
+/*Mettre en forme la photo de la section franchise----*/
+
+.franchise>img {
+    width: 50vw;
+    margin-right: 30px;
+    height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

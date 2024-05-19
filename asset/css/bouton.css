@@ -1,0 +1,68 @@
+/*Attributs pour les boutons-----------*/
+
+:root {
+    --culeur_btn_principale: #504646;
+    --ar_btn_principale: #61bc84;
+}
+
+.bouton {
+    padding: .5em .65em;
+    background-color: var(--ar_elements_sec);
+    color: var( --culeur_btn_principale);
+    font-weight: bold;
+    border-radius: 20px;
+    transition-delay: .05s;
+    max-width: max-content;
+    max-height: fit-content;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.reserver_ici_btn {
+    background-color: var(--ar_btn_principale);
+}
+
+.reserver_ici_btn:hover,
+.bouton:hover {
+    background-color: rgb(92, 82, 82);
+    color: #fff;
+}
+
+/*bouton général pour le pied de page*/
+.bouton_footer {
+    padding: 10px 20px;
+    background-color: rgb(197 168 168);
+    font-weight: bold;
+    color: #282828;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/*Effet*/
+.bouton_footer:hover {
+    background-color: var(--ar_btn_principale);
+}
+
+
+/*Le bouton action*/
+
+.action_btn {
+    background-color: var(--ar_btn_principale);
+    color: var( --culeur_btn_principale);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+
+.action_btn:hover {
+    scale: 1.07;
+    color: white;
+}
+
+.action_btn:active {
+    scale: 0.9;
+}

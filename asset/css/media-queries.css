@@ -1,0 +1,117 @@
+/*Regles pour le text*/
+
+@media only screen and (max-width: 750px) {
+    .restaurant {
+        flex-basis: 45%; /* 2 images par ligne sur les écrans moyens */
+        max-width: calc(50% - 20px); /* Tenir compte des marges */
+    }
+    .restaurant img {
+        height: 250px;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .botanique h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .botanique h1 {
+        font-size: 40px !important;
+    }
+    .botanique p {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 658px) {
+     .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .mission article .bouton_conteneur{
+        display: flex;
+        justify-content: center;
+    }
+    .restaurant {
+        flex-basis: 90%; /* 1 image par ligne sur les écrans plus petits */
+        max-width: calc(100% - 20px); /* Tenir compte des marges */
+    }
+    .restaurant img {
+        height: auto !important;
+    }
+
+}
+
+/*Boite de reservation*/
+@media screen and (max-width: 600px) {
+    .reservation-boite button,
+    .reservation-boite input,
+    .reservation-boite select {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
+    .reservation-boite{
+        flex-direction: column;
+    }
+    .reservation-boite button,
+    .reservation-boite input,
+    .reservation-boite select {
+        padding: 10px;
+        width: 100%;
+    }
+}
+}
+
+
+
+/*MEDIA QUERY pied de page!!!!!*/
+
+
+ @media screen and (max-width: 950px) {
+    .contenu_contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .pied_de_page h2,
+    .pied_de_page h4,
+    .pied_de_page .liens_colonne a{
+    font-size: 18px !important;
+    }
+    .pied_de_page p {
+    font-size: 14px !important;
+    }
+    .contenu_contact .liens_colonne,
+    .contact_info_colonne,
+    .abonez-toi {
+        width: 100% !important;
+    }
+ }
+
+@media screen and (max-width: 450px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .abonez-toi h2, p{
+        text-align: center;
+    }
+
+    .contact_info_colonne .btn_contact {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/*La barre de navigation pour les appareils mobiles*/
+
