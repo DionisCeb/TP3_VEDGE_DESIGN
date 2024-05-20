@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Franchise Page</title>
+    <link rel="stylesheet" href="asset/css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full height of viewport */
+        }
+
+        .card {
+            max-width: 600px;
+            max-height: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+
+        section {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .review {
+            margin-bottom: 20px;
+        }
+
+        .review p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .review img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .review .quote {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .review .author {
+            font-weight: bold;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav_header">
+        <nav>
+          <!-- Logo -->
+          <div class="logo">
+              <a href="./accueil.html" role="menuitem">
+                  <img class="medaillon" src="./asset/img/logo.png" alt="vedge_logo">
+              </a>
+          </div>
+              <!-- Liens du Menu -->
+              <ul class="liens">
+                  <li><a href="#" role="menuitem">Menu</a></li>
+                  <li><a href="#" role="menuitem">Philosophie</a></li>
+                  <li><a href="#" role="menuitem">Services</a></li>
+                  <li class="dropdown">
+                    <a href="#" role="menuitem">Trouvez-nous <span>⇩</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" role="menuitem">Trois-Rivières</a>
+                        <a href="#" role="menuitem">Drummondville</a>
+                        <a href="#" role="menuitem">Val-Jalbert</a>
+                        <a href="#" role="menuitem">Dix30</a>
+                        <a href="#" role="menuitem">Toronto</a>
+                        <a href="#" role="menuitem">Berlin</a>
+                    </div>
+                </li>
+              </ul>
+              <!-- Bouton de Réservation -->
+              <a href="#" class="action_btn" role="menuitem">Contactez-nous</a>
+              <div class="toggle_btn">
+                  <img src="asset/img/icones/nav_bar.png" alt="nav_bar">
+              </div>
+
+              <div class="dropdown_menu">
+                  <li><a href="#" role="menuitem">Menu</a></li>
+                  <li><a href="#" role="menuitem">Philosophie</a></li>
+                  <li><a href="#" role="menuitem">Services</a></li>
+                  <li><a href="#" role="menuitem">Trouvez-nous</a></li>
+                  <li><a href="#" class="action_btn" role="menuitem">Contactez-nous</a></li>
+              </div>
+            </nav>
+    </header>
+
+    <header>
+        <h1>Restaurant Franchise</h1>
+    </header>
+    
+    <div class="card">
+        <h2>Fiche détaillée de la franchise de Val-Jalbert</h2>
+        <div class="review">
+            <p class="quote">Les critiques sont dithyrambiques</p>
+            <p>"Absolument délicieux. Je ne suis pas végétalienne et c’était de loin l’un des meilleurs repas que j’ai pris à Val-Jalbert. Prenez le « hamburger » de la maison avec des frites de patates douces ou le « fromage grillé ». Nous étions là pour un déjeuner tardif un lundi et le service était amical et rapide. L’intérieur est également magnifique. J’adorais tout à ce sujet !"</p>
+            <p class="author">— Sarah O’Maillet</p>
+            <img src="asset/img/personnes/Sarah.jpg" alt="Sarah">
+        </div>
+        <a href="#" class="button">Voir toutes les critiques</a>
+    </div>
+
+
+    <section>
+        <h2>Gallerie photo</h2>
+        <div class="gallery">
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+            <img src="gallery3.jpg" alt="Gallery Image 3">
+        </div>
+        <a href="#">Voir toutes les images</a>
+    </section>
+
+    <section>
+        <h2>Réserver pour un groupe</h2>
+        <p>« Vedge » Val-Jalbert peut accueillir des groupes jusqu’à 24 personnes.</p>
+        <p>Les groupes de 20 à 24 personnes ont accès à une carte de groupe qui réunit l’ensemble de nos meilleurs vendeurs. Chaque personne à votre table sélectionnera au minimum une entrée et un plat.</p>
+        <button class="button">Voir le menu de groupe</button>
+        <button class="button">Faites une demande de réservation de groupe</button>
+    </section>
+
+    <section>
+        <h2>Heures d’ouverture</h2>
+        <table>
+            <tr>
+                <td>Lundi</td>
+                <td>11:30–22:00</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>11:30–22:00</td>
+            </tr>
+            <!-- Repeat for other days -->
+        </table>
+        <p>Neuf personnes et plus? <a href="#">Consultez notre page pour les groupes</a></p>
+    </section>
+
+    <section>
+        <h2>Localisation de la franchise</h2>
+        <p>Vedge | Val-Jalbert</p>
+        <p>500 rue de la Montagne</p>
+        <a href="https://maps.google.com">Ouvrir sur Google Maps</a>
+    </section>
+
+    <section>
+        <h2>Réservez votre table</h2>
+        <p>Toutes les réservations doivent être faites via notre site web.</p>
+        <button class="button">Réservez maintenant</button>
+    </section>
+
+    <section>
+        <h2>Profitez de nos promotions</h2>
+        <p>Deux Mimosas pour 15$ pendant toute l’heure du brunch</p>
+        <img src="promotion.jpg" alt="Promotion Image">
+    </section>
+
+    <section>
+        <h2>Menus</h2>
+        <ul>
+            <li>Menu jour et soir</li>
+            <li>Menu brunch</li>
+            <li>Menu boissons</li>
+            <li>Menu pour emporter</li>
+        </ul>
+    </section>
+</body>
+</html>
