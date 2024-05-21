@@ -66,3 +66,10 @@
 .action_btn:active {
     scale: 0.9;
 }
+
+
+/*centre le bouton*/
+.btn-centre {
+    display: flex;
+    justify-content: center;
+}

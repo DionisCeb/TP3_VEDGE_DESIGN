@@ -1,0 +1,118 @@
+
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  
+  
+  /* body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-400);
+  
+    background-color: hsl(var(--clr-neutral-200));
+  }
+   */
+  
+  
+  
+  
+  
+  
+  /* components */
+  .testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+     'one'
+     'two'
+     'three'
+     'four'
+     'five';
+  
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+  
+  .testimonial {
+    
+    padding: 2rem;
+    border-radius: 0.5rem;
+    
+  }
+  
+  .testimonial:nth-child(1) {
+    grid-area: one;
+    background-color: rgb(165, 186, 137);
+  }
+  .testimonial:nth-child(2) {
+    grid-area: two;
+    background-color: rgb(130, 109, 109);
+  }
+  .testimonial:nth-child(3) {
+    grid-area: three;
+    background-color: rgb(130, 154, 123);
+  }
+  .testimonial:nth-child(4) {
+    grid-area: four;
+    background-color: rgb(93, 116, 147);
+  }
+  .testimonial:nth-child(5) {
+    grid-area: five;
+    background-color: rgb(114, 108, 150);
+  }
+  
+  @media screen and (min-width: 33em) {
+    .testimonial-grid {
+        grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+  }
+  
+  @media screen and (min-width: 38em) {
+    .testimonial-grid {
+      grid-template-areas:
+       'one one'
+       'two five'
+       'three five'
+       'four four';
+    }
+  }
+  
+  @media screen and (min-width: 54em) {
+    .testimonial-grid {
+        grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+  }
+  
+  @media screen and (min-width: 75em) {
+    .testimonial-grid {
+        grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+  }
+  
+  
+  
+  
+  .testimonial img {
+    width: 60px;
+    border-radius: 50%;
+  }
+  
