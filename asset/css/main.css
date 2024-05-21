@@ -171,6 +171,12 @@ main>header>div {
     align-items: center;
 }
 
+.flex-center-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: row;
+    align-items: center;
+}
 /* Classe commune pour les éléments avec gouttière  */
 .with-gap {
     gap: 20px;
