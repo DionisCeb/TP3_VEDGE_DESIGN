@@ -1,5 +1,7 @@
   
-  
+  /*Cette vidéo m'a aidé à créer la grille
+  https://www.youtube.com/watch?v=rg7Fvvl3taU&t=1074s
+  */
   /* components */
   .testimonial-grid {
     display: grid;
@@ -12,7 +14,7 @@
      'four'
      'five';
   
-    padding-block: 2rem;
+    padding-block: 2rem;  
   }
   
   .testimonial {
@@ -24,7 +26,7 @@
   
   .testimonial:nth-child(1) {
     grid-area: one;
-    background-color: rgb(165, 186, 137);
+    background-color: rgb(105, 119, 87);
   }
   .testimonial:nth-child(2) {
     grid-area: two;
@@ -32,7 +34,7 @@
   }
   .testimonial:nth-child(3) {
     grid-area: three;
-    background-color: rgb(130, 154, 123);
+    background-color: rgb(121, 81, 124);
   }
   .testimonial:nth-child(4) {
     grid-area: four;

@@ -8,7 +8,8 @@
 @import url(footer_abonnez.css);
 @import url(bouton.css);
 @import url(grille.css);
-@import url(menu-section.css);
+@import url(menu.css);
+@import url(group-image.css);
 @import url(root.css);
 
 /*les style de police */
@@ -200,12 +201,14 @@ main>header>div {
 .botanique,
 .promotion {
     margin: 30px; 
+    padding: 5px;
     color: white;
     text-align: center;
 }
 
-.mission p{
-    color: var(--culeur_btn_principale);
+
+.mission p {
+    color: black;
 }
 
 

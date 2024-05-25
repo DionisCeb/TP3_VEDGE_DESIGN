@@ -1,13 +1,15 @@
 /*Attributs pour les boutons-----------*/
 
 :root {
-    --culeur_btn_principale: #504646;
+    --culeur_btn_principale: #ffffff;
     --ar_btn_principale: #61bc84;
+    --ar_btn_groupe: rgb(138, 110, 110);
 }
 
 .bouton {
     padding: .5em .65em;
     background-color: var(--ar_elements_sec);
+    border: none;
     color: var( --culeur_btn_principale);
     font-weight: bold;
     border-radius: 20px;
@@ -72,4 +74,16 @@
 .btn-centre {
     display: flex;
     justify-content: center;
+}
+
+
+/*Le bouton pour la reservation du groupe*/
+.bouton.groupe-btn {
+    background-color: var(--ar_btn_groupe);
+    font-size: 20px;
+}
+
+.bouton.groupe-btn:hover {
+    background-color: rgb(94, 154, 85);
+    color: var( --culeur_btn_principale);
 }

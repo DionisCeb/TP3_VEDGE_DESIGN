@@ -98,6 +98,23 @@
     }
  }
 
+
+ @media screen and (max-width: 550px) {
+    header h2{
+        text-align: center !important;
+    }
+
+    .trouver_rest h1,
+    .restaurant h3 {
+        font-size: 20px;
+    }
+
+    .promotion h3 {
+        font-size: 25px !important;
+    }
+ }
+
+
 @media screen and (max-width: 450px) {
     .newsletter-form {
         flex-direction: column;

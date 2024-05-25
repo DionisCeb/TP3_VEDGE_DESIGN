@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/main.css">
+    <script src="asset/js/navbar.js" defer></script>
+    <script src="asset/js/scrolling.js" defer></script>
     <title>Val-Jalbert</title>
 </head>
 <body>
@@ -38,7 +40,7 @@
                   <img src="asset/img/icones/nav_bar.png" alt="nav_bar">
               </div>
 
-              <div class="dropdown_menu">
+              <div class="dropdown_menu val-jalbert_drpdown">
                   <li><a href="#" role="menuitem">Menu</a></li>
                   <li><a href="#" role="menuitem">Philosophie</a></li>
                   <li><a href="#" role="menuitem">Services</a></li>
@@ -59,24 +61,24 @@
                    <h3>Grands espaces</h3>
                </div>
                <div class="restaurant">
-                   <img src="./asset/img/img-resto/drummondville.jpg" alt="Drummondville_restaurant">
+                   <img src="./asset/img/val-jalbert/plats.png" alt="Drummondville_restaurant">
                    <h3>Plats savoureux</h3>
                </div>
                <div class="restaurant">
-                   <img src="./asset/img/img-resto/trois-rivieres.jpg" alt="Trois-Rivieres_restaurant">
+                   <img src="./asset/img/val-jalbert/group.png" alt="Trois-Rivieres_restaurant">
                    <h3>Réservations de groupe</h3>
                </div>
                <div class="restaurant">
-                   <img src="./asset/img/img-resto/drummondville.jpg" alt="Dix30_restaurant">
+                   <img src="./asset/img/val-jalbert/fetes.png" alt="Dix30_restaurant">
                    <h3>Fêtes et concerts</h3>
                </div>
                <div class="restaurant">
-                   <img src="./asset/img/img-resto/val-jalbert.jpg" alt="Toronto_restaurant">
+                   <img src="./asset/img/val-jalbert/vue_lac.png" alt="Toronto_restaurant">
                    <h3>Vue sur le lac</h3>
                </div>
                <div class="restaurant">
-                   <img src="./asset/img/img-resto/trois-rivieres.jpg" alt="Berlin_restaurant">
-                   <h3>Berlin</h3>
+                   <img src="./asset/img/val-jalbert/enfants_parc.png" alt="Berlin_restaurant">
+                   <h3>Parc de jeux pour les enfants</h3>
                </div>  
            </div>
            <div class="btn-centre">
@@ -107,14 +109,22 @@
                 <h2>Menus</h2>
             </header>
             <p>Régalez-vous en bonne conscience !</p>
-            <p>Du lundi au vendredi, samedi et dimanche soir</p>
-            <a href="#" class="menu-button">Menu jour et soir</a>
-            <p>Samedi et dimanche de 10 h à 15 h</p>
-            <a href="#" class="menu-button">Menu brunch</a>
-            <p>Vins natures et biologiques, bières et cocktails botaniques</p>
-            <a href="#" class="menu-button">Menu boissons</a>
-            <p>Une grande sélection de plats pour manger au bureau ou à la maison</p>
-            <a href="#" class="menu-button">Menu pour emporter</a>
+            <div>
+                <p>Du lundi au vendredi, samedi et dimanche soir</p>
+                <a href="#" class="bouton groupe-btn">Menu jour et soir</a>
+            </div>
+            <div>
+                <p>Samedi et dimanche de 10 h à 15 h</p>
+                <a href="#" class="bouton groupe-btn">Menu brunch</a>
+            </div>
+            <div>
+                <p>Vins natures et biologiques, bières et cocktails botaniques</p>
+                <a href="#" class="bouton groupe-btn">Menu boissons</a>
+            </div>
+            <div>
+                <p>Une grande sélection de plats pour manger au bureau ou à la maison</p>
+                <a href="#" class="bouton groupe-btn">Menu pour emporter</a>
+            </div>
         </div>
     </section>
         
@@ -148,8 +158,33 @@
                        <button type="submit">Trouver</button>
                    </div>
                  </div>
+                 <div class="additional-info menu">
+                        <h1>Neuf personnes et plus?</h1>
+                        <p>Consultez notre page pour les groupes</p>
+                    <a class="bouton groupe-btn" href="#group-reservation" onclick="smoothScroll(event)">En savoir plus</a>
+                </div>
              </div>
      </section>
+
+     <!----Reservation du groupe-->
+     <section class="group-reservation" id="group-reservation">
+        <header>
+          <h2>Réserver pour un groupe</h2>
+        </header>
+        <div class="menu group">
+          <div class="group-info flex-center-column with-gap">
+              <header>
+                <h2>« Vedge » Val-Jalbert peut accueillir des groupes jusqu’à 24 personnes.</h2>
+              </header>
+              <p>Les groupes de 20 à 24 personnes ont accès à une carte de groupe qui réunit l’ensemble de nos meilleurs vendeurs. Chaque personne à votre table sélectionnera au minimum une entrée et un plat.</p>
+              <a class="bouton groupe-btn" href="#">Voir le menu de groupe</a>
+              <p>Faites une demande de réservation de groupe</p>
+              <button class="bouton groupe-btn" type="button" id="scrollToGroupImage">Faire une demande</button>
+          </div>
+          
+        </div>
+  </section>
+  
 
      <!----Les critiques-->
      <section>
@@ -160,8 +195,7 @@
             <div class="testimonial">
                 <div class="nom-img-client">
                   <div>
-        
-                    <img src="asset/img/personages/image-kira.jpg" alt="Sarah">
+                    <img src="asset/img/personages/image-saraah.jpg" alt="Sarah O’Maillet">
                   </div>
                   <div>
                     <h2 class="name">Sarah O’Maillet</h2>
@@ -258,6 +292,14 @@
         <div class="btn-centre">
           <a href="#" class="bouton">Voir toutes les critiques</a>
         </div>
+    </section>
+
+    <section id="group-image">
+      <div class="group-image flex-center-column with-gap">
+        <h1>Réservez votre table</h1>
+        <p>Toutes les réservations doivent être faites via notre site web.</p>
+        <button class="bouton groupe-btn" type="button">Réservez maintenant</button>
+    </div>
     </section>
     </main>
 

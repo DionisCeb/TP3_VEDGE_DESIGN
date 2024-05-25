@@ -1,0 +1,12 @@
+.group-image {
+    padding: 30px;
+    height: 50dvh;
+    background-image: url('../img/reservation/reservation.jpg');
+    background-size: 100%; 
+    background-position: center;     
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.group-image > h1,p{
+    color: white;
+}

@@ -43,3 +43,18 @@
 .reservation-boite input[type="number"]::placeholder {
     color: black;
 }
+
+
+/*Styles pour la reservation du groupe*/
+/*reservation-groupe.css*/
+
+
+
+/*La boite Neuf personnes et plus*/
+.additional-info.menu {
+   
+    /* width: 500px; */
+    justify-content: center;
+    align-items: center;
+}
+
