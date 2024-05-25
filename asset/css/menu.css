@@ -1,0 +1,33 @@
+/*La boite universale pour le menu et les reservation du groupe*/
+
+.menu {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .menu div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu header h2 {
+    color: #333;
+  }
+  
+  .menu p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  

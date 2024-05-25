@@ -61,7 +61,8 @@ nav .liens {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background-color: rgb(96 147 142);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -81,6 +82,7 @@ span {
 .dropdown-content a {
     /* padding: 12px 16px; */ /*changé en: "padding: 5px;" */
     padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
     display: block;
 }
@@ -108,7 +110,7 @@ span {
     right: 30px;
     top: 100px;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(68, 75, 71, 0.8);
     z-index: 1; 
     border-radius: 15px;
 }
@@ -129,6 +131,10 @@ span {
     width: 100%;
     text-align: center;
 }
+
+
+
+
 
 /*Navigation pour les telephones*/
 
@@ -159,6 +165,7 @@ span {
         left: 30px;
         top: 140px;
         width: unset;
+        background-color: rgb(126, 170, 166);
     } 
 
 }

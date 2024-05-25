@@ -7,6 +7,9 @@
 @import url(footer.css);
 @import url(footer_abonnez.css);
 @import url(bouton.css);
+@import url(grille.css);
+@import url(menu.css);
+@import url(group-image.css);
 @import url(root.css);
 
 /*les style de police */
@@ -27,7 +30,6 @@ main *+h1, main *+h2, main *+h3, main *+h4 {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #1e1a1a;
 }
 
 body, html {
@@ -199,15 +201,21 @@ main>header>div {
 .botanique,
 .promotion {
     margin: 30px; 
+    padding: 5px;
     color: white;
     text-align: center;
+}
+
+
+.mission p {
+    color: black;
 }
 
 
 /*Mettre en forme la section promotion-----*/
 
 .promotion {
-    min-height: 55vh;
+    min-height: 30dvh;
     background-image: url("/asset/img/mimosa.jpg");
     border-radius: 4px;
 }
